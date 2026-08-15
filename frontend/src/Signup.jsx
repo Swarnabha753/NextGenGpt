@@ -16,7 +16,7 @@ function Signup() {
         try {
 
             const res = await axios.post(
-                "http://localhost:8080/api/auth/register",
+                "https://nextgengpt-ee7v.onrender.com/api/auth/register",
                 {
                     username,
                     email,

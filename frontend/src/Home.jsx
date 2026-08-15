@@ -18,12 +18,7 @@ function Home() {
     const navigate = useNavigate();
 
     const toggleTheme = () => {
-
-        setTheme(
-            theme === "dark"
-                ? "light"
-                : "dark"
-        );
+        setTheme(theme === "dark" ? "light" : "dark");
     };
 
     const handleProfileClick = () => {

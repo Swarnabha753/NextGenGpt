@@ -98,7 +98,7 @@ function ChatWindow() {
     try {
 
         const response = await fetch(
-            "https://sigmagpt-backend-hn7q.onrender.com/api/image-analyze",
+            "https://nextgengpt-ee7v.onrender.com/api/image-analyze",
             {
                 method: "POST",
                 body: formData
@@ -136,7 +136,7 @@ const options = {
         try {
 
             const response = await fetch(
-                "https://sigmagpt-backend-hn7q.onrender.com/api/chat",
+                "https://nextgengpt-ee7v.onrender.com/api/chat",
                 options
             );
 
@@ -284,7 +284,7 @@ const sendVoiceMessage = async (message) => {
     try {
 
         const response = await fetch(
-            "https://sigmagpt-backend-hn7q.onrender.com/api/chat",
+            "https://nextgengpt-ee7v.onrender.com/api/chat",
             options
         );
 
