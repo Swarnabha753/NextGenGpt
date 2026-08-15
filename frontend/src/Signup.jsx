@@ -7,7 +7,7 @@ function Signup() {
 
     const navigate = useNavigate();
 
-    const [name, setName] = useState("");
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -18,7 +18,7 @@ function Signup() {
             const res = await axios.post(
                 "http://localhost:8080/api/auth/register",
                 {
-                    name,
+                    username,
                     email,
                     password
                 }
@@ -26,10 +26,10 @@ function Signup() {
 
             alert(res.data.message);
 
-            // redirect to login
+            // Redirect to login
             navigate("/login");
 
-        } catch(err){
+        } catch (err) {
 
             console.log(err);
 
@@ -49,9 +49,9 @@ function Signup() {
 
                 <input
                     type="text"
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                 />
 
                 <input
